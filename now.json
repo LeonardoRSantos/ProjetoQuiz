@@ -1,0 +1,11 @@
+{
+	"name": "Quiz Online ISL WYDEN",
+	"alias": "quizzesonline",
+	"version": 2,
+	"builds": [
+		{
+			"src": "**/*",
+			"use": "@now/static"
+		}
+	]
+}
