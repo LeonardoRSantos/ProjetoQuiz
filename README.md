@@ -4,6 +4,7 @@
 
 #### Linguagens e tecnologias usadas:
 - HTML
+- CSS
 - JavaScript
 
 
