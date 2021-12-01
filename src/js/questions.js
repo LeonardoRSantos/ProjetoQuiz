@@ -2,7 +2,7 @@
 
 const
 	names = [
-		'Bem Estar - ISL WYDEN'
+		'Avaliação do Estado de Saúde'
 	
 	],
 	questions = [

@@ -1,6 +1,6 @@
 # Quiz Online ISL WYDEN
 
-### Projeto Quizz Bem Estar ISL WYDEN
+### Projeto Avaliação do Estado de Saúde
 
 #### Linguagens e tecnologias usadas:
 - HTML

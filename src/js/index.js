@@ -168,9 +168,9 @@ const start = () => {
 	for (let i = 0; i < types.length; i++) {
 		if (types[i].checked) {
 			selectedType = i
-			document.title = `${names[i]} - Quiz Online ISL WYDEN`
-			logo.innerHTML = `${names[i]} - Quiz`
-			logoMobile.innerHTML = `${names[i]} - Quiz`
+			document.title = `${names[i]} - Avaliação do Estado de Saúde`
+			logo.innerHTML = `${names[i]} - Formulário`
+			logoMobile.innerHTML = `${names[i]} - Avaliação do Estado de Saúde`
 		}
 	}
 
@@ -195,9 +195,9 @@ const stop = () => {
 	btnFinish.classList.add('hide')
 	pagination.classList.add('hide')
 	btnSave.classList.add('hide')
-	document.title = 'Quiz Online ISL WYDEN - Início'
-	logo.innerHTML = `Quiz Online ISL WYDEN`
-	logoMobile.innerHTML = `Quiz Online ISL WYDEN`
+	document.title = 'Avaliação do Estado de Saúde'
+	logo.innerHTML = `Avaliação do Estado de Saúde`
+	logoMobile.innerHTML = `Avaliação do Estado de Saúde`
 
 	points = 0
 	currentQuestion = 0
