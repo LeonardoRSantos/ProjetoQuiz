@@ -32,10 +32,11 @@ const
 			'Sim',
 			'Sim',
 			'Sim',
-			'Sim',
+			'Sim' 
 			
 			
-		],
+		]
+		
 				
 	],
 	fakeAnswers = [

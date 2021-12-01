@@ -222,7 +222,7 @@ const next = () => {
 		})
 	} else {
 		for (let i = 0; i < currentAnswers.length; i++) {
-			if (currentAnswers[i].checked && currentAnswers[i].getAttribute('data-text') === answers[selectedType][currentQuestion]) {
+			if (currentAnswers[i].checked && currentAnswers[i].getAttribute('data-text') === fakeAnswers[selectedType][currentQuestion]) {
 				matches.push(1)
 				points += 1
 			}
@@ -243,15 +243,31 @@ const next = () => {
 			btnShowAnswers.classList.remove('hide')
 			btnSave.classList.remove('hide')
 			btnFinish.classList.remove('hide')
-
+			//<i class=" ${matches[i] === 0 ? '' : ''}" style="top:${matches[i] === 0 ? '7' : '5'}px;margin:-7px 0 0">${matches[i] === 0 ? '' : ''}</i>
 			let html = '<h4><i class="material-icons" style="top:2px">question_answer</i> Respostas</h4>'
-			for (let i = 0; i < answers[selectedType].length; i++) {
-				html +=
-					`<p style="margin:0">${i + 1}) ${questions[selectedType][i]}</p>
-					<p style="margin:0 0 10px">Resposta: ${answers[selectedType][i]} <i class=" ${matches[i] === 0 ? '' : ''}" style="top:${matches[i] === 0 ? '7' : '5'}px;margin:-7px 0 0">${matches[i] === 0 ? '' : ''}</i></p>`
+			
+
+
+			for (let i = 0; i < fakeAnswers[selectedType].length; i++) {
+				
+				
+				if(fakeAnswers[selectedType][i]){
+					html +=				
+					`<p style="margin:0">${i}) ${questions[selectedType][i]}</p>
+					<p style="margin:0 0 10px">Resposta: ${fakeAnswers[selectedType][i]}</p>` 					
+				
+				}
+				if(answers[selectedType][i]){
+					html +=				
+					`<p style="margin:0">${i}) ${questions[selectedType][i]}</p>
+					<p style="margin:0 0 10px">Resposta: ${answers[selectedType][i]}</p>`
+				
+				}
+					
 			}
 
 			showAnswers.innerHTML = html
+
 			//${pointsPercentage < 50 ? 'red-text' : 'green-text'}">${pointsPercentage.toFixed(1)}%
 			//${pointsPercentage < 50 ? 'red-text' : 'green-text'}">${pointsPercentage.toFixed(1)}%
 			//${points} de ${questions[selectedType].length}
@@ -267,7 +283,7 @@ const next = () => {
 			M.Modal.getInstance(document.querySelector('#modal2')).open()
 
 			createPagination()
-		} else render()
+		}else render()
 	}
 }
 
