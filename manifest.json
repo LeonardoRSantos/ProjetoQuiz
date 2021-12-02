@@ -1,8 +1,8 @@
 {
-	"name": "Quiz Online ISL WYDEN",
-	"short_name": "Quiz Online ISL WYDEN",
+	"name": "Avaliação do Estado de Saúde",
+	"short_name": "Avaliação do Estado de Saúde",
 	"start_url": "./?utm_source=web_app_manifest",
-	"description": "O Quiz Online ISL WYDEN traz várias perguntas de várias áreas para testar seu conhecimento e você aprender coisas novas.",
+	"description": "Avaliação do Estado de Saúde informativo sobre a saúde do participante.",
 	"lang": "pt-BR",
 	"display": "standalone",
 	"orientation": "portrait",
